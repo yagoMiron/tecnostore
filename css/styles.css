@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+}
+
+:root {
+    --hero-image: url(../img/imgs-index/hero.jpg);
+    --marketing-black-background: radial-gradient(#000, #222111);
+    --marketing-white-background: #fff; 
+}
+
+#hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), var(--hero-image);
+    height: 500px;
+    padding: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    width: 100%;
+    animation: opacity 3s;
+
+}
+
+#hero-text h1 {
+    text-align: center;
+    font-family: "regular";
+    font-size: 62px;
+    animation: float infinite;
+}
+
+#hero-text p {
+    text-align: center;
+    font-family: "italic";
+    font-size: 48px;
+}
+
+.marketing-black, .marketing-white {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.marketing-black {
+    background: var(--marketing-black-background);
+}
+
+.white-title, .white-description {
+    color: #fff;
+}
+
+.white-title, .black-title {
+    font-family: "regular";
+    font-size: 54px;
+}
+
+.white-description, .black-description {
+    font-family: "thin";
+    font-size: 32px;
+}
+
+.product {
+    width: 30%;
+    animation: float 2s infinite ease-in-out;
+}
+
+.know-more {
+    margin: 40px 0;
+    background-color: #038aff;
+    border: none;
+    width: 200px;
+    padding: 10px 0;
+    color: white;
+    font-family: "regular";
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.marketing-white {
+    background-color: var(--marketing-white-background);
+}

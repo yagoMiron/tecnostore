@@ -1,0 +1,25 @@
+@media screen and (max-width: 500px) {
+    #hero{
+        height: 300px;
+    }
+    #hero-text h1{
+        font-size: 32px;
+    }
+    #hero-text p{
+        font-size: 24px;
+    }
+
+    .product{
+        opacity: 1;
+        width: 80%;
+    }
+
+    .white-title, .black-title{
+        font-size: 36px;
+        text-align: center;
+    }
+    .white-description, .black-description{
+        font-size: 24px;
+        text-align: center;
+    }
+}

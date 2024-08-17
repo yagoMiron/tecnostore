@@ -1,0 +1,49 @@
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+#container-about{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../img/backgrounds/Fundo1.jpg);
+    background-size: cover;
+}
+#container-history{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../img/backgrounds/Fundo2.png);
+    background-size: cover;
+}
+.container-info{
+    padding: 150px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+}
+.title-h2{
+    font-family: "regular";
+    font-size: 2em;
+    transition: 2s;
+    animation: scale 2s;
+}
+.text{
+    font-family: "thin";
+    font-size: 1.5em;
+    line-height: 1.2em;
+    letter-spacing: 1px;
+    text-align: center;
+    animation: opacity 4s;
+}
+
+
+/*Responsividade*/
+@media screen and (max-width: 600px){
+    .container-info{
+        padding: 100px 50px;
+    }
+}

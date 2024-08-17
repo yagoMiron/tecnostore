@@ -1,0 +1,135 @@
+*{
+    scroll-behavior: smooth;
+    scroll-margin: 58px;
+}
+:root {
+    --black-bg: radial-gradient(#000, #222111);
+    --white-bg: #fff; 
+}
+main{
+    margin-top: 150px;
+}
+.title-products{
+    font-family: 'regular';
+    text-align: center;
+}
+a{
+    color: #000000;
+}
+.container-produtos{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-inline: 20px;
+}
+.produto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+    font-family: 'thin';
+    max-width: 250px;
+    max-height: 330px;
+    height: 100%;
+}
+.produto:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.container-img{
+    max-width: 300px;
+}
+.img-product{
+    width: 100%;
+    height: auto;
+}
+.reduce{
+    width: 112.6px;
+}
+.name-and-value{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+    flex: 1;
+}
+.product-name{
+    font-size: 2em;
+}
+.product-value{
+    font-size: 1.5em;
+}
+.btn-comprar{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    color: #ffffff;
+    background: linear-gradient(
+        #24252a 80%,
+        rgb(66, 64, 64)
+    );
+    font-size: 1em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.container-info-produto{
+    margin-top: 150px;
+}
+.subcontainer-black{
+    background: var(--black-bg);
+}
+.subcontainer-white{
+    background-color: #ffffff;
+}
+.produto-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 30px 20px;
+}
+.product-name-info{
+    font-family: 'regular';
+    text-align: center;
+    letter-spacing: 1px;
+}
+.description-produto{
+    font-family: 'thin';
+    text-align: center;
+}
+.white-text{
+    color: #fff;
+}
+.black-text{
+    color: #000;
+}
+.container-img-info-product{
+    max-width: 500px;
+}
+.container-img-info-product img{
+    width: 100%;
+    animation: float 3s infinite ease-in;
+}
+.btn-comprar-slim{
+    margin: 40px 0;
+    background-color: #038aff;
+    border: none;
+    width: 200px;
+    padding: 10px 0;
+    color: #ffffff;
+    font-family: "regular";
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
