@@ -1,10 +1,10 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR" prefix="og: https://ogp.me/ns#">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TECNO.STORE</title>
+    <title>Tecno.Store</title>
 
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
 
@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <link rel="stylesheet" href="css/keyframes.css" />
+    <link rel="stylesheet" href="css/slider.css" />
 
     <!--Open Graph-->
     <meta property="og:title" content="TECNO.STORE" />
@@ -29,18 +30,75 @@
     />
   </head>
   <body>
-    <header>
-      <a href="index.html"><h1 id="app-title">Tecno.Store</h1></a>
-      <a href="pages/about.html" id="about">Sobre</a>
-      <a href="pages/products.html" id="products">Produtos</a>
-    </header>
+    <header></header>
+    <!--Slider-->
+    <main>
+      <div class="slides">
+        <input
+          type="radio"
+          name="radio_btn"
+          class="radio_btn"
+          id="radio1"
+          checked
+        />
+        <input type="radio" name="radio_btn" class="radio_btn" id="radio2" />
+        <input type="radio" name="radio_btn" class="radio_btn" id="radio3" />
+        <input type="radio" name="radio_btn" class="radio_btn" id="radio4" />
 
-    <div id="hero">
-      <div id="hero-text">
-        <h1>Super qualidade de áudio</h1>
-        <p>...e por um preço justo!</p>
+        <div class="slide first">
+          <section id="page_1">
+            <div class="color-filter">
+              <div class="slider-content">
+                <h2 class="titulo-white">IPADs</h2>
+                <p>Veja essas novidades em tables da Apple e compre logo o seu.</p>
+                <a href="">Conferir IPADs ➜</a>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="slide">
+          <section id="page_2">
+            <div class="color-filter">
+              <div class="slider-content">
+                <h2 class="titulo-white">Smartphones</h2>
+                <p>Os Smartphones mais avançados que cabem no seu bolso com preços que cabem na sua carteira.</p>
+                <a href="">Conferir Smartphones ➜</a>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="slide">
+          <section id="page_3">
+            <div class="color-filter">
+              <div class="slider-content">
+                <h2 class="titulo-white">Laptops</h2>
+                <p>Carregue seu trabalho para onde quiser com essa nova linha de Laptops</p>
+                <a href="">Conferir Laptop ➜</a>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="slide">
+          <section id="page_4">
+            <div class="color-filter">
+              <div class="slider-content">
+                <h2 class="titulo-white">Smartwatch</h2>
+                <p>Um computador de pulso para levar sempre com você, a prova de agua e a prova de aventuras</p>
+                <a href="">Conferir Smartwatches ➜</a>
+              </div>
+            </div>
+          </section>
+        </div>
       </div>
-    </div>
+
+      <div class="manual_navigation">
+        <label for="radio1" class="manual_btn" id="radio1_manual"></label>
+        <label for="radio2" class="manual_btn" id="radio2_manual"></label>
+        <label for="radio3" class="manual_btn" id="radio3_manual"></label>
+        <label for="radio4" class="manual_btn" id="radio4_manual"></label>
+      </div>
+    </main>
+    <!--final Slider-->
 
     <div class="marketing-black">
       <h1 class="white-title">Áudio nítido</h1>
@@ -70,9 +128,9 @@
       </a>
     </div>
 
-    <footer>
-      <p>Copyrigth&copy; TECNO.STORE LTDA. Todos os direitos reservados</p>
-      <p>Rua José Tadio Arima, 222, Bairro Ycaraí, Aquidauana MS</p>
-    </footer>
+    <footer></footer>
+    <script type="module" src="./js/footer.js"></script>
+    <script type="module" src="./js/header.js"></script>
+    <script type="module" src="./js/slider.js"></script>
   </body>
 </html>

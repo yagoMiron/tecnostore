@@ -1,0 +1,116 @@
+.slides {
+  width: 400vw;
+  display: flex;
+  overflow: hidden;
+  width: 100vw;
+}
+.slides input {
+  display: none;
+}
+.slide {
+  width: 25%;
+  transition: 1s;
+  width: 100vw;
+  min-height: 100vh;
+}
+.slide section {
+  width: 100vw;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide section .color-filter{
+    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%);
+    width: 100%;
+    height: 100%;   
+    display: flex;
+    flex-direction: row-reverse;
+}
+.slider-content{
+    font-family: "regular";
+    color: white;
+    margin: 20vh 80px 0px 30px;
+    width: 450px;
+}
+.slider-content h2 {
+    font-size: 40px;
+}
+.slider-content p{
+    font-size: 24px;
+}
+.slider-content a{
+    background-color: white;
+    color: black;
+    font-size: 25px;
+    padding: 5px 20px;
+    border-radius: 25px;
+}
+.slider-content a:hover{
+    transition: 0.5s;
+    background-color: rgb(63, 63, 63);
+    color: white;
+    padding: 7px 25px 7px 25px;
+    margin-left: 10px;
+}
+
+.manual_navigation {
+  width: 100vw;
+  position: relative;
+  margin-top: -45px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 0px;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+.manual_btn {
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.manual_btn:hover {
+  background-color: white;
+  cursor: pointer;
+}
+#radio1:checked ~ .first {
+  margin-left: 0px;
+}
+*:has(* #radio1:checked) .manual_navigation #radio1_manual {
+  background-color: white;
+  padding: 10px 40px;
+}
+#radio2:checked ~ .first {
+  margin-left: -100vw;
+}
+*:has(* #radio2:checked) .manual_navigation #radio2_manual {
+  background-color: white;
+  padding: 10px 40px;
+}
+#radio3:checked ~ .first {
+  margin-left: -200vw;
+}
+*:has(* #radio3:checked) .manual_navigation #radio3_manual {
+  background-color: white;
+  padding: 10px 40px;
+}
+#radio4:checked ~ .first {
+  margin-left: -300vw;
+}
+*:has(* #radio4:checked) .manual_navigation #radio4_manual {
+  background-color: white;
+  padding: 10px 40px;
+}
+#page_1 {
+  background-image: url(../img/slides_img/ipad-wallpaper.webp);
+}
+#page_2 {
+  background-image: url(../img/slides_img/smartphone-wallpaper.jpg);
+}
+#page_3 {
+  background-image: url(../img/slides_img/laptop-wallpaper.png);
+}
+#page_4 {
+  background-image: url(../img/slides_img/smartwatch-wallpaper.jpeg);
+}

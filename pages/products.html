@@ -1,13 +1,14 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR" prefix="og: https://ogp.me/ns#">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TECNO.STORE</title>
+    <title>Tecno.Store | Produtos</title>
     <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon" />
     <!--CSS-->
     <link rel="stylesheet" href="../css/fonts.css" />
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/header-footer.css" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/products.css" />
@@ -33,13 +34,46 @@
   <body>
     <header>
       <a href="../index.html"><h1 id="app-title">Tecno.Store</h1></a>
-      <a href="about.html" id="about">Sobre</a>
+      <a href="/pages/about.html" id="about">Sobre</a>
       <a href="products.html" id="products">Produtos</a>
     </header>
 
     <main>
-      <h2 class="title-products">Produtos</h2>
-
+      <div id="hero">
+        <div id="hero-text">
+          <h1>Produtos</h1>
+        </div>
+      </div>
+      <section class="search-bar">
+        <form id="formulario-pesquisa">
+          <div>
+            <label for="pesquisa">Pesquisa:</label>
+            <input id="pesquisa" name="pesquisa" type="search" />
+          </div>
+          <div>
+            <label for="preco">Preço:</label>
+            <select name="preco" id="preco">
+              <option value="-">Sem filtro</option>
+              <option value="maior">Maior que</option>
+              <option value="menor">Menor que</option>
+              <option value="igual">Igual a</option>
+            </select>
+            <input id="preco-value" name="preco" type="number" />
+          </div>
+          <div>
+            <label for="categoria">Categoria:</label>
+            <select name="categoria" id="categoria" >
+              <option value="-">Sem filtro</option>
+              <option value="smartphone">Smartphone</option>
+              <option value="carregador">Carregador</option>
+              <option value="smartphone">Smartwatch</option>
+              <option value="laptop">Laptop</option>
+              <option value="ipad">Ipad</option>
+            </select>
+          </div>
+          <input type="submit" value="Pesquisar" id="pesquisar-produto" />
+        </form>
+      </section>
       <section class="container-produtos"></section>
 
       <section class="container-info-produto">
@@ -134,10 +168,9 @@
     </main>
 
     <footer>
-      <p>Copyrigth&copy; TECNO.STORE LTDA. Todos os direitos reservados</p>
-      <p>Rua José Tadio Arima, 222, Bairro Ycaraí, Aquidauana MS</p>
     </footer>
 
-    <script type="module" src="js/containerProdutos.js"></script>
+    <script type="module" src="js/pesquisa.js"></script>
+    <script type="module" src="../js/footer.js"></script>
   </body>
 </html>

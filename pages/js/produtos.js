@@ -5,6 +5,7 @@ export const produtos = [
     preco: 100,
     link: "https://web.whatsapp.com/",
     reduce: true,
+    categoria: "carregador"
   },
   {
     nome: "Ipad",
@@ -12,6 +13,7 @@ export const produtos = [
     preco: 5000,
     link: "https://web.whatsapp.com/",
     reduce: false,
+    categoria: "ipad"
   },
   {
     nome: "Iphone 13",
@@ -19,6 +21,7 @@ export const produtos = [
     preco: 10000,
     link: "https://web.whatsapp.com/",
     reduce: false,
+    categoria: "smartphone"
   },
   {
     nome: "Macbook",
@@ -26,6 +29,7 @@ export const produtos = [
     preco: 14000,
     link: "https://web.whatsapp.com/",
     reduce: false,
+    categoria: "laptop"
   },
   {
     nome: "Apple Watch",
@@ -33,24 +37,63 @@ export const produtos = [
     preco: 6000.99,
     link: "https://web.whatsapp.com/",
     reduce: false,
-  }
+    categoria: "smartwatch"
+  },
+  {
+    nome: "Carregador Motorola",
+    img: "../img/products/carregador-motorola.jpg",
+    preco: 30.99,
+    link: "https://web.whatsapp.com/",
+    reduce: true,
+    categoria: "carregador"
+  },
+  {
+    nome: "Carregador Samsung",
+    img: "../img/products/carregador-samsung.jpeg",
+    preco: 55.50,
+    link: "https://web.whatsapp.com/",
+    reduce: true,
+    categoria: "carregador"
+  },
+  {
+    nome: "Carregador Iphone",
+    img: "../img/products/carregador-iphone.jpg",
+    preco: 300,
+    link: "https://web.whatsapp.com/",
+    reduce: true,
+    categoria: "carregador"
+  },
+  {
+    nome: "Samsung S24",
+    img: "../img/products/smartphone-Samsung-S24.webp",
+    preco: 5849.10,
+    link: "https://web.whatsapp.com/",
+    reduce: true,
+    categoria: "smartphone"
+  },
+  {
+    nome: "Moto G24",
+    img: "../img/products/smartphone-motorola.png",
+    preco: 899.10,
+    link: "https://web.whatsapp.com/",
+    reduce: true,
+    categoria: "smartphone"
+  },
+  
+  {
+    nome: "Dell Latitude",
+    img: "../img/products/dell-latitude.jpg",
+    preco: 1299.99,
+    link: "https://web.whatsapp.com/",
+    reduce: true,
+    categoria: "laptop"
+  },
+  {
+    nome: "Razer Blade 14",
+    img: "../img/products/razer-blade14.png",
+    preco: 3599.99,
+    link: "https://web.whatsapp.com/",
+    reduce: true,
+    categoria: "laptop"
+  },
 ];
-
-/*
-<a href="https://web.whatsapp.com/">
-          <div class="produto">
-            <div class="container-img">
-              <img
-                src="../img/products/chargerApple.png"
-                alt=""
-                class="img-product reduce"
-              />
-            </div>
-            <div class="name-and-value">
-              <h2 class="product-name">Carregador Apple</h2>
-              <span class="product-value">R$ 100,00</span>
-            </div>
-            <button class="btn-comprar">Comprar</button>
-          </div>
-        </a>
-*/
